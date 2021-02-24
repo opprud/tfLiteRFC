@@ -44,7 +44,6 @@ int selu(float *p, float *res) {
 		v = *p;
 		if(v > 0.0)
 		{
-			//printf("Got %f :",v);
 			*res = LAMBDA * v;
 		}
 		else
