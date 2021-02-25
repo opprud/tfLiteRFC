@@ -37,6 +37,10 @@ The ELU is implemented as a lookup table for `int8`, the SELU could be similar
 
 A `float` prototype is shown below
 ```
+
+#define ALPHA   1.6733
+#define LAMBDA  1.0507
+
 int selu(float *p, float *res) {
 	float v;
 	//iterate through array
